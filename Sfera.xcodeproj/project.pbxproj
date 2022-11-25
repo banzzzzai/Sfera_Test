@@ -253,8 +253,8 @@
 		11DE43FF29313C6700A40B88 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				11DE43D829313B9100A40B88 /* HistoryTableViewCell.swift */,
 				11DE43D729313B9100A40B88 /* HistoryViewController.swift */,
+				11DE43D829313B9100A40B88 /* HistoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,8 +275,8 @@
 		11DE440B29313CD800A40B88 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				11DE440529313CAE00A40B88 /* SearchFactsTableViewCell.swift */,
 				11DE440129313CAD00A40B88 /* SearchFactsViewController.swift */,
+				11DE440529313CAE00A40B88 /* SearchFactsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

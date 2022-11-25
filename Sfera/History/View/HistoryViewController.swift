@@ -23,8 +23,7 @@ class HistoryViewController: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     
     var presenter: HistoryPresenterProtocol?
-    var allAnime: [HistoryEntity]?
-    {
+    var allAnime: [HistoryEntity]?{
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -93,14 +92,6 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         return allAnime?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if let allAnime = allAnime {
-            let section = allAnime[section]
-            return section.name
-        }
-        return ""
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier) as? HistoryTableViewCell, let allAnime = allAnime else {
             return UITableViewCell()
@@ -110,6 +101,14 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let allAnime = allAnime {
+            let section = allAnime[section]
+            return section.name
+        }
+        return ""
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let allAnime = allAnime else { return 0 }
         return allAnime[section].animeFacts.count
@@ -117,6 +116,30 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.didTapAnimeFactCell(with: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+//        let degree: Double = 90
+//        let rotationAngle = CGFloat(degree * Double.pi / 180)
+//        let rotationTransform = CATransform3DMakeRotation(rotationAngle, 0, 1, 0)
+//        cell.layer.transform = rotationTransform
+//
+//        UIView.animate(withDuration: 0.4, delay: 0.1 * Double(indexPath.row), options: .curveEaseInOut, animations: {
+//            cell.layer.transform = CATransform3DIdentity
+//        })
+        
+        let translationTransform = CATransform3DTranslate(CATransform3DIdentity, 500, 0, 0)
+        cell.layer.transform = translationTransform
+        
+        UIView.animate(withDuration: 0.4, delay: 0.1 * Double(indexPath.row), options: .curveEaseInOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+        })
+        
     }
     
 }
