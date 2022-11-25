@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Anime" representedClassName="Anime" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="animeFacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fact" inverseName="anime" inverseEntity="Fact"/>
+    </entity>
+    <entity name="Fact" representedClassName="Fact" syncable="YES">
+        <attribute name="fact" optional="YES" attributeType="String"/>
+        <attribute name="factId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="anime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Anime" inverseName="animeFacts" inverseEntity="Anime"/>
+    </entity>
+    <elements>
+        <element name="Anime" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Fact" positionX="-54" positionY="-9" width="128" height="74"/>
+    </elements>
+</model>
