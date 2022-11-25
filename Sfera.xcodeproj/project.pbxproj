@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C11FC6293144BE00EDEE15 /* Sfera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C11FC4293144BE00EDEE15 /* Sfera.xcdatamodeld */; };
+		11C11FCB2931454300EDEE15 /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C11FC72931454300EDEE15 /* Fact+CoreDataClass.swift */; };
+		11C11FCC2931454300EDEE15 /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C11FC82931454300EDEE15 /* Fact+CoreDataProperties.swift */; };
+		11C11FCD2931454300EDEE15 /* Anime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C11FC92931454300EDEE15 /* Anime+CoreDataClass.swift */; };
+		11C11FCE2931454300EDEE15 /* Anime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C11FCA2931454300EDEE15 /* Anime+CoreDataProperties.swift */; };
 		11DE439329313A0F00A40B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DE439129313A0F00A40B88 /* LaunchScreen.storyboard */; };
 		11DE439E29313A0F00A40B88 /* SferaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE439D29313A0F00A40B88 /* SferaTests.swift */; };
 		11DE43A829313A0F00A40B88 /* SferaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE43A729313A0F00A40B88 /* SferaUITests.swift */; };
@@ -39,11 +44,6 @@
 		11DE440D29313D7800A40B88 /* AnimeFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE440C29313D7800A40B88 /* AnimeFactsService.swift */; };
 		11DE441129313DA300A40B88 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11DE441029313DA300A40B88 /* SnapKit */; };
 		11DE441429313DB400A40B88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11DE441329313DB400A40B88 /* Alamofire */; };
-		11E8024A29314283006EAE1D /* Sfera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11E8024829314282006EAE1D /* Sfera.xcdatamodeld */; };
-		11E8024F29314342006EAE1D /* Anime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8024B29314342006EAE1D /* Anime+CoreDataClass.swift */; };
-		11E8025029314342006EAE1D /* Anime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8024C29314342006EAE1D /* Anime+CoreDataProperties.swift */; };
-		11E8025129314342006EAE1D /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8024D29314342006EAE1D /* Fact+CoreDataClass.swift */; };
-		11E8025229314342006EAE1D /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8024E29314342006EAE1D /* Fact+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11C11FC5293144BE00EDEE15 /* Sfera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sfera.xcdatamodel; sourceTree = "<group>"; };
+		11C11FC72931454300EDEE15 /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11C11FC82931454300EDEE15 /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11C11FC92931454300EDEE15 /* Anime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11C11FCA2931454300EDEE15 /* Anime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11DE438029313A0E00A40B88 /* Sfera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sfera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DE439229313A0F00A40B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11DE439929313A0F00A40B88 /* SferaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SferaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,11 +103,6 @@
 		11DE440429313CAD00A40B88 /* SearchFactsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFactsRouter.swift; sourceTree = "<group>"; };
 		11DE440529313CAE00A40B88 /* SearchFactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFactsTableViewCell.swift; sourceTree = "<group>"; };
 		11DE440C29313D7800A40B88 /* AnimeFactsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeFactsService.swift; sourceTree = "<group>"; };
-		11E8024929314282006EAE1D /* Sfera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sfera.xcdatamodel; sourceTree = "<group>"; };
-		11E8024B29314342006EAE1D /* Anime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11E8024C29314342006EAE1D /* Anime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11E8024D29314342006EAE1D /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11E8024E29314342006EAE1D /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 				11DE440029313C9A00A40B88 /* SearchFacts */,
 				11DE43FC29313BAC00A40B88 /* Details */,
 				11DE43FE29313BE800A40B88 /* History */,
-				11E8024829314282006EAE1D /* Sfera.xcdatamodeld */,
+				11C11FC4293144BE00EDEE15 /* Sfera.xcdatamodeld */,
 			);
 			path = Sfera;
 			sourceTree = "<group>";
@@ -187,10 +187,10 @@
 		11DE43B629313A7A00A40B88 /* СoreData */ = {
 			isa = PBXGroup;
 			children = (
-				11E8024B29314342006EAE1D /* Anime+CoreDataClass.swift */,
-				11E8024C29314342006EAE1D /* Anime+CoreDataProperties.swift */,
-				11E8024D29314342006EAE1D /* Fact+CoreDataClass.swift */,
-				11E8024E29314342006EAE1D /* Fact+CoreDataProperties.swift */,
+				11C11FC72931454300EDEE15 /* Fact+CoreDataClass.swift */,
+				11C11FC82931454300EDEE15 /* Fact+CoreDataProperties.swift */,
+				11C11FC92931454300EDEE15 /* Anime+CoreDataClass.swift */,
+				11C11FCA2931454300EDEE15 /* Anime+CoreDataProperties.swift */,
 				11DE43B729313A7A00A40B88 /* CoreDataManager.swift */,
 			);
 			path = "СoreData";
@@ -429,34 +429,34 @@
 			files = (
 				11DE43EC29313B9100A40B88 /* DetailsModuleBuilder.swift in Sources */,
 				11DE43F129313B9100A40B88 /* DetailsViewController.swift in Sources */,
-				11E8025129314342006EAE1D /* Fact+CoreDataClass.swift in Sources */,
 				11DE440929313CAE00A40B88 /* SearchFactsRouter.swift in Sources */,
 				11DE43F329313B9100A40B88 /* DetailsTableViewCell.swift in Sources */,
 				11DE43E629313B9100A40B88 /* HistoryInteractor.swift in Sources */,
 				11DE43C829313B0E00A40B88 /* AppDelegate.swift in Sources */,
 				11DE43FA29313B9100A40B88 /* HistoryRouter.swift in Sources */,
 				11DE440829313CAE00A40B88 /* SearchFactsModuleBuilder.swift in Sources */,
-				11E8025229314342006EAE1D /* Fact+CoreDataProperties.swift in Sources */,
 				11DE43F029313B9100A40B88 /* HistoryTableViewCell.swift in Sources */,
-				11E8024A29314283006EAE1D /* Sfera.xcdatamodeld in Sources */,
+				11C11FC6293144BE00EDEE15 /* Sfera.xcdatamodeld in Sources */,
 				11DE43B829313A7A00A40B88 /* CoreDataManager.swift in Sources */,
+				11C11FCB2931454300EDEE15 /* Fact+CoreDataClass.swift in Sources */,
 				11DE43F729313B9100A40B88 /* DetailsRouter.swift in Sources */,
 				11DE43FB29313B9100A40B88 /* HistoryEntity.swift in Sources */,
 				11DE43F929313B9100A40B88 /* SearchFactsEntity.swift in Sources */,
 				11DE43EB29313B9100A40B88 /* SearchFactsInteractor.swift in Sources */,
+				11C11FCD2931454300EDEE15 /* Anime+CoreDataClass.swift in Sources */,
 				11DE43C729313B0E00A40B88 /* SceneDelegate.swift in Sources */,
 				11DE43EF29313B9100A40B88 /* HistoryViewController.swift in Sources */,
 				11DE43F829313B9100A40B88 /* DetailsPresenter.swift in Sources */,
+				11C11FCE2931454300EDEE15 /* Anime+CoreDataProperties.swift in Sources */,
 				11DE440729313CAE00A40B88 /* SearchFactsPresenter.swift in Sources */,
 				11DE440A29313CAE00A40B88 /* SearchFactsTableViewCell.swift in Sources */,
+				11C11FCC2931454300EDEE15 /* Fact+CoreDataProperties.swift in Sources */,
 				11DE440D29313D7800A40B88 /* AnimeFactsService.swift in Sources */,
 				11DE43EE29313B9100A40B88 /* DetailsInteractor.swift in Sources */,
 				11DE440629313CAE00A40B88 /* SearchFactsViewController.swift in Sources */,
 				11DE43ED29313B9100A40B88 /* HistoryModuleBuilder.swift in Sources */,
 				11DE43E429313B9100A40B88 /* DetailsEntity.swift in Sources */,
 				11DE43EA29313B9100A40B88 /* HistoryPresenter.swift in Sources */,
-				11E8025029314342006EAE1D /* Anime+CoreDataProperties.swift in Sources */,
-				11E8024F29314342006EAE1D /* Anime+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,14 +820,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		11E8024829314282006EAE1D /* Sfera.xcdatamodeld */ = {
+		11C11FC4293144BE00EDEE15 /* Sfera.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				11E8024929314282006EAE1D /* Sfera.xcdatamodel */,
+				11C11FC5293144BE00EDEE15 /* Sfera.xcdatamodel */,
 			);
-			currentVersion = 11E8024929314282006EAE1D /* Sfera.xcdatamodel */;
-			name = Sfera.xcdatamodeld;
-			path = "../../Sfera test/Sfera/Sfera.xcdatamodeld";
+			currentVersion = 11C11FC5293144BE00EDEE15 /* Sfera.xcdatamodel */;
+			path = Sfera.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
